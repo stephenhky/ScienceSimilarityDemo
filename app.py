@@ -12,6 +12,7 @@ demotext2 = 'A lot of magnificent scientific research projects are funded by NIH
 smodel = SentenceTransformer('allenai-specter')
 
 st.text('Science Similarity')
+st.write('Disclaimer: This is a demonstration. The models used are of public domain, and are not trained with any private or sensitive data such as PII or PHI.')
 
 text1 = st.text_area('Document 1', demotext1)
 text2 = st.text_area('Document 2', demotext2)
