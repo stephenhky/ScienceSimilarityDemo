@@ -10,7 +10,7 @@ def compute_sentence_similarity(text1, text2):
     payload = json.dumps({'text1': text1, 'text2': text2})
     headers = {'Content-Type': 'application/json'}
     response = requests.request('GET', url, headers=headers, data=payload)
-    similarity = response.get('similarity')
+    similarity = json.loads(response.text).get('similarity')
     return similarity
 
 
