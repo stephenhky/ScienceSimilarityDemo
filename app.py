@@ -14,10 +14,22 @@ def compute_sentence_similarity(text1, text2):
     return similarity
 
 
+# Presentation details
+st.header('Science Similarity Detection')
+col1, col2 = st.columns((2, 1))
+col1.text('Goal: Automate the process of identifying and withdrawing duplicated or overlapping grant applications.')
+col1.text('Achievement and Impact:')
+col1.text('- Reduces ~95% of the workload.')
+col1.text('- Oricesses 18k-23k~ gratn applications bi-monthly.')
+col1.text('- Manually verified 99.9% accuracy.')
+col1.text('- Picks up similar sciences missed by human review.')
+col2.image('histscisim.png')
+
+# demonstration
 demotext1 = 'NIH funds a lot of great science projects.'
 demotext2 = 'A lot of magnificent scientific research projects are funded by NIH.'
 
-st.text('Science Similarity')
+st.header('Demonstration')
 st.write('Disclaimer: This is a demonstration. The models used are of public domain, and are not trained with any private or sensitive data such as PII or PHI.')
 
 text1 = st.text_area('Document 1', demotext1)
