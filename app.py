@@ -35,5 +35,6 @@ st.write('Disclaimer: This is a demonstration. The models used are of public dom
 text1 = st.text_area('Document 1', demotext1)
 text2 = st.text_area('Document 2', demotext2)
 
-similarity = compute_sentence_similarity(text1, text2)
-st.write('Similarity: {:.4f}'.format(similarity))
+if st.button('Compute Similarity!'):
+    similarity = compute_sentence_similarity(text1, text2)
+    st.write('Similarity: {:.4f}'.format(similarity))
