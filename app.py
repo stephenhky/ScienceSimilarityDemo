@@ -16,18 +16,10 @@ def compute_sentence_similarity(text1, text2):
 
 # Presentation details
 st.header('Science Similarity Detection')
-col1, col2 = st.columns((2, 1))
-col1.write('Goal: Automate the process of identifying and withdrawing duplicated or overlapping grant applications.')
-col1.write('Achievement and Impact:')
-col1.write('- Reduces ~95% of the workload.')
-col1.write('- Processes 18k-23k~ grant applications bi-monthly.')
-col1.write('- Manually verified 99.9% accuracy.')
-col1.write('- Picks up similar sciences missed by human review.')
-col2.image('histscisim.png')
 
 # demonstration
-demotext1 = 'NIH funds a lot of great science projects.'
-demotext2 = 'A lot of magnificent scientific research projects are funded by NIH.'
+demotext1 = 'Quantum field theory can be dealt with using either canonical quantization or path integrals.'
+demotext2 = 'There are two approaches in quantum field theory, namely, canonical quantization and path integrals.'
 
 st.header('Demonstration')
 st.write('Disclaimer: This is a demonstration. The models used are of public domain, and are not trained with any private or sensitive data such as PII or PHI.')
