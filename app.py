@@ -22,7 +22,7 @@ demotext1 = 'Quantum field theory can be dealt with using either canonical quant
 demotext2 = 'There are two approaches in quantum field theory, namely, canonical quantization and path integrals.'
 available_sentence_bert_models = [
     'allenai-specter',
-    'scibert-nli'
+    'scibert-nli',
     'biobert-nli'
 ]
 
