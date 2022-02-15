@@ -38,5 +38,5 @@ sbert_model = st.selectbox(
 )
 
 if st.button('Compute Similarity!'):
-    similarity = compute_sentence_similarity(text1, text2)
+    similarity = compute_sentence_similarity(text1, text2, sbert_model)
     st.write('Similarity: {:.4f}'.format(similarity))
